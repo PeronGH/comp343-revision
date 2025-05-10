@@ -388,7 +388,7 @@ Computer evidence must meet the same legal requirements as any other form of evi
     *   Used for small capacity, portable devices. Not recommended for modern hard disks unless old OS.
 *   **exFAT:**
     *   Partitions up to 512TiB (recommended max). Files up to 16EiB.
-    *   Not compatible with Linux/Unix by default. Defragment often. Cannot pre-allocate disk space.
+    *   Not compatible with Linux/Unix by default until Linux 5.4 (released in 2019). Defragment often. Cannot pre-allocate disk space.
     *   Good for large flash drives, media devices.
 *   **HFS+ (Mac OS Extended):**
     *   Max volume 8EB. Files as large as partition.
