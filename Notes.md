@@ -888,16 +888,16 @@ Computer evidence must meet the same legal requirements as any other form of evi
 
 ### FAT32 vs NTFS Comparison
 
-| Feature               | FAT32                 | NTFS                                         |
-| :-------------------- | :-------------------- | :------------------------------------------- |
-| Basic Structure       | Simple structure      | Complex structure (MFT, attributes)          |
-| Max Chars in Filename | 83 (LFN up to 255)    | 255                                разрушен. |
-| Max File Size         | 4GB                   | 16TB (theoretically 16EB)                    |
-| Encryption            | Not provided          | Provided (EFS)                               |
-| Security              | Network type (share)  | Local and network (ACLs)                     |
-| Performance           | Good (simpler)        | Better than FAT32 (for large volumes)        |
-| Compatibility with OS | Windows 95/98/XP etc. | Windows NT/2000/XP/Vista/7/8/10 etc.         |
-| Accessing Speed       | Less Relatively       | More (efficient for large volumes)           |
+| Feature               | FAT32                 | NTFS                                  |
+| :-------------------- | :-------------------- | :------------------------------------ |
+| Basic Structure       | Simple structure      | Complex structure (MFT, attributes)   |
+| Max Chars in Filename | 83 (LFN up to 255)    | 255                                   |
+| Max File Size         | 4GB                   | 16TB (theoretically 16EB)             |
+| Encryption            | Not provided          | Provided (EFS)                        |
+| Security              | Network type (share)  | Local and network (ACLs)              |
+| Performance           | Good (simpler)        | Better than FAT32 (for large volumes) |
+| Compatibility with OS | Windows 95/98/XP etc. | Windows NT/2000/XP/Vista/7/8/10 etc.  |
+| Accessing Speed       | Less Relatively       | More (efficient for large volumes)    |
 
 ### Windows Registry
 *   Hierarchical database storing hardware/software configuration, network connections, user preferences, setup info.
