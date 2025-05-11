@@ -947,9 +947,9 @@ Computer evidence must meet the same legal requirements as any other form of evi
     *   **MDB (Master Directory Block) / VIB (Volume Information Block):** Stores volume info.
     *   **VCB (Volume Control Block):** Stores MDB info when OS mounts.
     *   **Extents Overflow File:** Stores file info not in MDB/VCB.
-    *   **Catalog File:** Listing of all files/directories, maintains relationships (B*-tree).
+    *   **Catalog File:** Listing of all files/directories, maintains relationships (B\*-tree).
     *   **Volume Bitmap:** Tracks used/unused blocks.
-    *   **B*-tree File System:** Used by File Manager for catalog and extents overflow. Data in leaf nodes.
+    *   **B\*-tree File System:** Used by File Manager for catalog and extents overflow. Data in leaf nodes.
 
 ### UNIX and Linux Disk Structures and Boot Processes
 *   **Linux File Systems:**
