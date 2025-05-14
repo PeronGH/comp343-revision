@@ -461,7 +461,7 @@ Computer evidence must meet the same legal requirements as any other form of evi
 
 ### Integrity of Investigation Aspects
 *   **Collection:** Proper methods to gather evidence.
-*   **Chain of Custody (ACPO Principle 4):** Documenting the chronological possession and handling of evidence from seizure to court. Critical for authenticity.
+*   **Chain of Custody (ACPO Principle 3):** Documenting the chronological possession and handling of evidence from seizure to court. Critical for authenticity.
 *   **Authentication:** Verifying that the evidence is genuine and unaltered.
     *   **File Imaging and Authentication:**
         *   Identify files needed.
