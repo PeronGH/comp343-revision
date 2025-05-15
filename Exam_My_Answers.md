@@ -104,4 +104,35 @@ forensic methodology is a set of structured and systematic procedures or princip
 - Different scope: legal investigation only tries to collect evidence based on the warrants. internal investigation has more flexibility especially on company-owned devices.
 - Different outcome: legal investigation needs to report on court, which may influence the outcome of a legal case. Internal investigation may need to report to HR or management department, may lead to firing misconducting employee or even legal cases.
 
+### Q2
+
+Four key elements include: Identification, Preservation, Analysis, Presentation. “Secure” includes indentification and preservation.
+
+Source 1: Hard Disk.
+
+1. Record the scene, including the location of the device and its state
+2. Ensure the device is turned off.
+3. Remove the disk from the device.
+4. Use a write blocker to connect to the disk.
+5. Create a bit-to-bit copy of the disk.
+6. Compute the hash of the copy, record the hash.
+7. For each step above, record who, when and how.
+
+Source 2: RAM
+
+1. Record the scene, including the location of the device and its state
+2. Ensure the device is on
+3. Connect the device to an external drive or a network drive
+4. Create a dump of RAM and store it on that drive
+5. Compute hash for the dump
+6. For each step above, record who, when and how.
+
+### Q3
+
+1. They use different interfaces. This means they may not be able to share the same write blocker. So we should use the correct write blocker for each one.
+2. Due to the existence of TRIM command on SSDs, which does not immediately erase the data, it may be possible to recover data from SSDs. For HDD, it does not have similar command.
+3. SSD is usually faster, which may save time when creating a bit-for-bit forensic image.
+4. SSD’s contorller is usually more advanced, some even supports built-in full disk encryption. This may make live aquision necessary.
+5. Generally, they are both non-volatile storage and bit-for-bit image can be created from either of them. So most steps will remain the same.
+
 ## Section B
