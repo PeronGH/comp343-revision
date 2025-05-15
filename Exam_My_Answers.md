@@ -132,7 +132,61 @@ Source 2: RAM
 1. They use different interfaces. This means they may not be able to share the same write blocker. So we should use the correct write blocker for each one.
 2. Due to the existence of TRIM command on SSDs, which does not immediately erase the data, it may be possible to recover data from SSDs. For HDD, it does not have similar command.
 3. SSD is usually faster, which may save time when creating a bit-for-bit forensic image.
-4. SSD’s contorller is usually more advanced, some even supports built-in full disk encryption. This may make live aquision necessary.
+4. SSD’s controller is usually more advanced, some even supports built-in full disk encryption. This may make live acquision necessary.
 5. Generally, they are both non-volatile storage and bit-for-bit image can be created from either of them. So most steps will remain the same.
 
+### Q4
+
+Full drive encryption means all the contents on the disk is encrypted. When a disk with FDE enabled captured powered off, without a decryption key or known exploit of the encryption algorithm, it is impossible for forensic experts to decrypt it, so a meaningful forensic image cannot be created from this disk. Steganography focus on hiding possible evidence in other seemingly unrelated data. It tries to prevent forensic experts to even realize the existence of certain evidence.
+
+Similarities:
+
+1. Both aim to prevent forensic experts from finding the evidence of crime.
+2. Both rely on some degree of secrecy. FDE needs the decryption key to be secret. Steganography needs the method to hide information to be secret.
+
+Differences:
+
+1. FDE does not hide the existence of data, it just prevents investigators from accessing its contents. Steganography tries to hide the existence of data.
+2. In live acquisition, FDE may be bypassed, but Steganography will still hind the existence of evidence.
+3. The encryption usually does not increase the size of data, it just turns data into unreadable format. Steganography may embed data into a much larger carrier file.
+4. Steganalysis may reveal the method used for steganography, but full drive encryption is more difficult to crack. 
+
 ## Section B
+
+### Q1
+
+1. The contents of storage device that may be presented on court should not be changed during forensics.
+   - This means the evidence should be original and authentic. Any modification may invalidate the evidence.
+   - Write blocker may be used.
+2. Someone must prove they are competent enough to access the original data, and should explain the reason and the implication.
+   - This means only forensic experts can access the original data. It can avoid unprofessional handling of evidence.
+   - The investigator need to write down their experiences on the report presented on court, including reasons and impact behind their actions to the original data.
+3. Any process applied on the digital evidence should be recorded, and should be possible for 3rd party to follow and replicate.
+   - This means there will be audit records of everything done by the experts to the evidence. This ensures chain of custody.
+   - The investigator should record when, how, who, what when they take any action to the evidence, including when secure and analysis.
+4. The case officer is responsible for the above principles to be followed during investigation.
+   - This means if any principle is violated, the case officer may face punishment. They need to monitor the whole process to prevent things from going wrong.
+   - There will be a case officer assigned to each case, monitoring the whole investigation and ensure they follow the ACPO guide.
+
+### Q2
+
+S1: a company employee download a confidential document which they do not have the permission to access by using other's credentials. Forensic investigator may try to find the log in record. 
+
+S2: a company employee download a confidential document onto their computer and try to sell it online. Forensic investigator may need to find the material on the suspect's computer or records of selling.
+
+S3: a company employee intentionally delete all the records from company database without permission, causing chaos. Forensic investigator may try to find the connection record. 
+
+S3A: a company employee selling the accounts and passwords in the company's database.
+
+### Q3
+
+1. The extensive logging may be able to collect more detailed evidence than post-mortem acquisition. As some user activity may not be originally recorded. 
+2. The logs are directly linked to the user, making it easy to link the actions with the person.
+3. The logs have timestamps, can be used to reconstruct timeline.
+4. The logs are real-time, which means the suspect can not delete it or hide it.
+
+But ethically:
+
+1. May capture too much unrelated data, out of the scope of warrant.
+2. May violate privacy rights.
+3. May cause public backslash if widely used.
