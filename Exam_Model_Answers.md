@@ -499,8 +499,6 @@ While beneficial for forensics, the practice of excessive logging raises signifi
 **Conclusion:**
 The ethicality of logging user activities, especially "excessive" logging, hinges on a balance between the legitimate needs of an organization for security and investigation, and the privacy rights of individuals. Transparency, consent (where applicable), proportionality, data minimization, security of logged data, and clear policies are crucial for navigating these ethical considerations. For a forensic investigator, while logs are beneficial, they must also be aware of how this data was collected and ensure its use aligns with legal and ethical boundaries.
 
-Okay, here are some foreseeable file recovery related questions, along with model answers, structured in a way that would be suitable for an exam. These answers draw upon the concepts covered in the comprehensive revision notes.
-
 ---
 
 ## Foreseeable Questions
